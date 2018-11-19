@@ -23,8 +23,8 @@ namespace DragonsLair
             Console.WriteLine("#     #   #   # #      #      # #   ## #    # ");
             Console.WriteLine(" #####    #   # ###### ###### # #    #  ####  ");
             Console.WriteLine("0-----------------------------------------------0");
-            Console.WriteLine("|    Turnering:  Vinter  Turnering               |");
-            Console.WriteLine("|    Spillede runder:    2                       |");
+            Console.WriteLine("|    Turnering: "+ tournamentName+"              |");
+            Console.WriteLine("|    Spillede runder:    "+Round.                       |");
             Console.WriteLine("|    Spillede kampe:     3                       |");
             Console.WriteLine("|-------------------------------| VUNDNE KAMPE   |");
             Console.WriteLine("|    1. The Cretans             |        2       |");
