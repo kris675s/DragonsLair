@@ -12,8 +12,7 @@ namespace DragonsLair
         {
             return teams;
         }
-        
-       
+
         public void ShowScore(string tournamentName)
         {
             Console.WriteLine("Implement this method!");
@@ -72,11 +71,6 @@ namespace DragonsLair
                         }
 
                         int x = 0;
-                        /*do
-                        {
-                            newFreeRider = scramble[x++];
-                        }
-                        */
 
                         while (newFreeRider == oldFreeRider)
                         {
@@ -91,7 +85,7 @@ namespace DragonsLair
                     {
                         Match match = new Match();
                         match.FirstOpponent = scramble[i];
-                        match.SecondOpponent = scramble[i + 1]; //test virker ikke fix bounds out
+                        match.SecondOpponent = scramble[i + 1]; 
                         newRound.AddMatch(match);
                     }
                     t.AddRound(newRound);
@@ -107,6 +101,7 @@ namespace DragonsLair
                 throw new Exception("Round not finished");
             }
         }
+
         public void SaveMatch(string tournamentName, int round, string winner)
         {
             Tournament t = tournamentRepository.GetTournament(tournamentName);

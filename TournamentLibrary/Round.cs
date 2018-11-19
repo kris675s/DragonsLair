@@ -19,9 +19,9 @@ namespace TournamentLib
                 Match result = null;
                 {
                 if (m.FirstOpponent.Name == teamName1 && m.SecondOpponent.Name == teamName2)
-                {
-                    result = m;
-                }
+                    {
+                        result = m;
+                    }
 
                 }
 
@@ -31,9 +31,6 @@ namespace TournamentLib
 
         public bool IsMatchesFinished()
         {
-            /* TODO: Implement this method
-            bool
-            */
             for (int i = 0; i < matches.Count; i++)
             {
                 if (matches[i].Winner == null)
@@ -46,9 +43,6 @@ namespace TournamentLib
 
         public List<Team> GetWinningTeams()
         {
-            /* TODO: Implement this method
-            GetWinningTeams()
-            */
             List<Team> winners = new List<Team>();
 
             for (int i = 0; i < matches.Count; i++)
@@ -60,7 +54,6 @@ namespace TournamentLib
 
         public List<Team> GetLosingTeams()
         {
-            // TODO: Implement this method
             List<Team> loosers = new List<Team>();
 
             foreach (Match m in matches)
