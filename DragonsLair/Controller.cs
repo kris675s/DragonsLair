@@ -14,6 +14,25 @@ namespace DragonsLair
         }
 
         public void ShowScore(string tournamentName)
+/*
+ #####                                        
+ #     # ##### # #      #      # #    #  ####  
+ #         #   # #      #      # ##   # #    # 
+  #####    #   # #      #      # # #  # #      
+       #   #   # #      #      # #  # # #  ### 
+ #     #   #   # #      #      # #   ## #    # 
+  #####    #   # ###### ###### # #    #  ####  
+0----------------------------------------------0
+| 	Turnering: Vinter Turnering  		       |
+| 	Spillede runder: 2		                   |
+| 	Spillede kampe: 3		                   |
+|-------------------------------| VUNDNE KAMPE |
+|	1. The Cretans	            	| 2	       |
+|	2. The Valyrians            	| 1	       |
+|	3. The Spartans	            	| 0	       |
+|	3. The Corinthians           	| 0	       |
+0----------------------------------------------0
+*/
         {
             Console.WriteLine("Implement this method!");
         }
