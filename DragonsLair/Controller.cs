@@ -7,7 +7,6 @@ namespace DragonsLair
 {
     public class Controller
     {
-     private list<Round> NumberOfrounds = new list<Round>();
         private TournamentRepo tournamentRepository = new TournamentRepo();
         private List<Team> Scramble(List<Team> teams)
         {
@@ -25,8 +24,8 @@ namespace DragonsLair
             Console.WriteLine("#     #   #   # #      #      # #   ## #    # ");
             Console.WriteLine(" #####    #   # ###### ###### # #    #  ####  ");
             Console.WriteLine("0-----------------------------------------------0");
-            Console.WriteLine("|    Turnering: "+ tournamentName+"              |");
-            Console.WriteLine("|    Spillede runder:    "+ tournamentRepository.GetTournament(tournamentName).GetNumberOfRounds+"                      |");
+            Console.WriteLine("|    Turnering: "+ tournamentName+"		 |");
+            Console.WriteLine("|    Spillede runder: "+ tournamentRepository.GetTournament(tournamentName).GetNumberOfRounds() +"				 |");
             Console.WriteLine("|    Spillede kampe:     3                       |");
             Console.WriteLine("|-------------------------------| VUNDNE KAMPE   |");
             Console.WriteLine("|    1. The Cretans             |        2       |");
@@ -34,6 +33,7 @@ namespace DragonsLair
             Console.WriteLine("|    3. The Spartans            |        0       |");
             Console.WriteLine("|    3. The Corinthians         |        0       |");
             Console.WriteLine("0-----------------------------------------------0");
+		
         }
 
         public void ScheduleNewRound(string tournamentName, bool printNewMatches = true)
