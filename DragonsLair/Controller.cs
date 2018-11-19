@@ -14,27 +14,24 @@ namespace DragonsLair
         }
 
         public void ShowScore(string tournamentName)
-/*
- #####                                        
- #     # ##### # #      #      # #    #  ####  
- #         #   # #      #      # ##   # #    # 
-  #####    #   # #      #      # # #  # #      
-       #   #   # #      #      # #  # # #  ### 
- #     #   #   # #      #      # #   ## #    # 
-  #####    #   # ###### ###### # #    #  ####  
-0----------------------------------------------0
-| 	Turnering: Vinter Turnering  		       |
-| 	Spillede runder: 2		                   |
-| 	Spillede kampe: 3		                   |
-|-------------------------------| VUNDNE KAMPE |
-|	1. The Cretans	            	| 2	       |
-|	2. The Valyrians            	| 1	       |
-|	3. The Spartans	            	| 0	       |
-|	3. The Corinthians           	| 0	       |
-0----------------------------------------------0
-*/
         {
-            Console.WriteLine("Implement this method!");
+            Console.WriteLine(" #####                                        ");
+            Console.WriteLine("#     # ##### # #      #      # #    #  ####  ");
+            Console.WriteLine("#         #   # #      #      # ##   # #    #");
+            Console.WriteLine(" #####    #   # #      #      # # #  # #      ");
+            Console.WriteLine("      #   #   # #      #      # #  # # #  ### ");
+            Console.WriteLine("#     #   #   # #      #      # #   ## #    # ");
+            Console.WriteLine(" #####    #   # ###### ###### # #    #  ####  ");
+            Console.WriteLine("0-----------------------------------------------0");
+            Console.WriteLine("| 	Turnering: Vinter Turnering  		       |");
+            Console.WriteLine("| 	Spillede runder: 2		                   |");
+            Console.WriteLine("| 	Spillede kampe: 3		                   |");
+            Console.WriteLine("|-------------------------------| VUNDNE KAMPE  |");
+            Console.WriteLine("|	1. The Cretans	            	| 2	       |");
+            Console.WriteLine("|	2. The Valyrians            	| 1	       |");
+            Console.WriteLine("|	3. The Spartans	            	| 0	       |");
+            Console.WriteLine("|	3. The Corinthians           	| 0	       |");
+            Console.WriteLine("0-----------------------------------------------0");
         }
 
         public void ScheduleNewRound(string tournamentName, bool printNewMatches = true)
