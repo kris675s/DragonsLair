@@ -30,11 +30,7 @@ namespace DragonsLair
             Console.WriteLine("|    Turnering: "+ tournamentName+"		 |");
             Console.WriteLine("|    Spillede runder: "+ t.GetNumberOfRounds() +"				 |");
 			Console.WriteLine("|    Spillede kampe:  " + R.GetMatchesCount() +"				 |");
-            Console.WriteLine("|-------------------------------| VUNDNE KAMPE   |");
 			t.TeamReturner();
-     
-            Console.WriteLine("0------------------------------------------------0");
-		
         }
 
         public void ScheduleNewRound(string tournamentName, bool printNewMatches = true)

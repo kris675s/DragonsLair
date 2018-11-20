@@ -147,16 +147,20 @@ namespace TournamentLib
 
 		public void TeamReturner()
 		{
+			int WinsCounter = 0;
+
 			int ICounter = 1;
 			SetupTestTeams();
-			for(int i = 0; i<teams.Count; i++)
+			Console.WriteLine("|-------------------------------| VUNDNE KAMPE   |");
+			for (int i = 0; i<teams.Count; i++)
 			{
-				Console.WriteLine("|    "+ ICounter++ + ". "+ teams[i] +"		|	x	 |");
+				Console.WriteLine("|    "+ ICounter++ + ". "+ teams[i] +"		|	"+ WinsCounter +"	 |");
 			}
+			Console.WriteLine("0------------------------------------------------0");
 
 
 
-	
 		}
     }
 }
+
