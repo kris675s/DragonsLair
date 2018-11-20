@@ -144,5 +144,19 @@ namespace TournamentLib
 
             rounds.Add(round3);
         }
+
+		public void TeamReturner()
+		{
+			int ICounter = 1;
+			SetupTestTeams();
+			for(int i = 0; i<teams.Count; i++)
+			{
+				Console.WriteLine("|    "+ ICounter++ + ". "+ teams[i] +"		|	x	 |");
+			}
+
+
+
+	
+		}
     }
 }

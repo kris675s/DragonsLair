@@ -87,6 +87,19 @@ namespace TournamentLib
                 }
             }
             return result;
+			
         }
-    }
+		public int GetMatchesCount()
+		{
+			int count = 0;
+			for(int i = 0; i < matches.Count; i++)
+			{
+				count = i;
+			}
+			//int MatchNumber = matches.Count;
+			//string MatchString = MatchNumber.ToString();
+
+			return count;
+		}
+	}
 }

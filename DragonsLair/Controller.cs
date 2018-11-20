@@ -13,8 +13,10 @@ namespace DragonsLair
             return teams;
         }
 
+	
         public void ShowScore(string tournamentName)
         {
+			Round R = new Round();
             Tournament t = tournamentRepository.GetTournament(tournamentName);
 
             Console.WriteLine(" #####                                        ");
@@ -24,16 +26,14 @@ namespace DragonsLair
             Console.WriteLine("      #   #   # #      #      # #  # # #  ### ");
             Console.WriteLine("#     #   #   # #      #      # #   ## #    # ");
             Console.WriteLine(" #####    #   # ###### ###### # #    #  ####  ");
-            Console.WriteLine("0-----------------------------------------------0");
+            Console.WriteLine("0------------------------------------------------0");
             Console.WriteLine("|    Turnering: "+ tournamentName+"		 |");
             Console.WriteLine("|    Spillede runder: "+ t.GetNumberOfRounds() +"				 |");
-            Console.WriteLine("|    Spillede kampe:  							|");
+			Console.WriteLine("|    Spillede kampe:  " + R.GetMatchesCount() +"				 |");
             Console.WriteLine("|-------------------------------| VUNDNE KAMPE   |");
-            Console.WriteLine("|    1. "+ t.GetTeam) +"            |               |");
-            Console.WriteLine("|    1. The Valerians           |        1       |");
-            Console.WriteLine("|    3. The Spartans            |        0       |");
-            Console.WriteLine("|    3. The Corinthians         |        0       |");
-            Console.WriteLine("0-----------------------------------------------0");
+			t.TeamReturner();
+     
+            Console.WriteLine("0------------------------------------------------0");
 		
         }
 
